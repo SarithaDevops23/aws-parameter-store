@@ -1,7 +1,8 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\params"
   ],
-  "SelectedNode": "\\C:\\Users\\user\\Source\\Repos\\aws-parameter-store",
+  "SelectedNode": "\\params",
   "PreviewInSolutionExplorer": false
 }
