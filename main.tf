@@ -8,11 +8,18 @@ resource "aws_ssm_parameter" "params" {
 variable "params"{
 
 	default={
-		parameters={
 			name = "demo1", type=String, value = "demo1"
 			name = "demo2", type=String, value = "demo2"
 
 		}
 
 	}
+}
+
+terraform {
+  backend "s3" {
+    bucket = "saritabucket"
+    key    = "sample/terraform.tfvars"
+    region = "us-east-1"
+  }
 }
