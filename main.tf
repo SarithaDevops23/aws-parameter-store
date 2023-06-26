@@ -20,7 +20,7 @@ variable "params"{
 			{name = "roboshop.dev.cart.catalogue_host", value = "catalogue-dev.devops23.store", type="String"},
 			{name = "roboshop.dev.cart.catalogue_port", value = "8080", type="String"},
 			{name = "roboshop.dev.shipping.cart_endpoint", value = "cart-dev.devops23.store:8080", type="String"},
-			{name = "roboshop.dev.shipping.db_host", value = ""mysql-dev.devops23.store", type="String"},
+			{name = "roboshop.dev.shipping.db_host", value = "mysql-dev.devops23.store", type="String"}
 ]
 }
 
