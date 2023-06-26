@@ -1,5 +1,5 @@
 default:
-	@rm -rf .terraform.tfstate
+	@rm -rf .terraform
 	@git pull
 	@terraform init
 	@terraform apply -auto-approve
