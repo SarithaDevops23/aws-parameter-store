@@ -13,7 +13,25 @@ variable "params"{
 			{name = "roboshop.dev.frontend.cart_url", value = "http://cart-dev.devops23.store:8080/", type="String"},
 			{name = "roboshop.dev.frontend.shipping_url", value = "http://shipping-dev.devops23.store:8080/", type="String"},
 			{name = "roboshop.dev.frontend.payment_url", value = "http://payment-dev.devops23.store:8080/", type="String"}
-			
+	
+			{name = "roboshop.dev.catalogue.mongo_url", value = "mongodb://mongodb-dev.devops23.store:27017/catalogue", type="String"}
+
+			{name = "roboshop.dev.user.mongo_url", value = "mongodb://mongodb-dev.devops23.store:27017/users", type="String"}
+			{name = "roboshop.dev.user.redis_host", value = "redis-dev.devops23.store", type="String"}
+
+			{name = "roboshop.dev.cart.redis_host", value = "redis-dev.devops23.store", type="String"}
+			{name = "roboshop.dev.cart.catalogue_host", value = "catalogue-dev.devops23.store", type="String"}
+			{name = "roboshop.dev.cart.catalogue_port", value = "8080", type="String"}
+
+			{name = "roboshop.dev.shipping.cart_endpoint", value = "cart-dev.devops23.store:8080", type="String"}
+			{name = "roboshop.dev.shipping.db_host", value = ""mysql-dev.devops23.store", type="String"}
+
+
+
+
+
+
+
 
 ]
 }
