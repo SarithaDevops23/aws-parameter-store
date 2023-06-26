@@ -20,7 +20,13 @@ variable "params"{
 			{name = "roboshop.dev.cart.catalogue_host", value = "catalogue-dev.devops23.store", type="String"},
 			{name = "roboshop.dev.cart.catalogue_port", value = "8080", type="String"},
 			{name = "roboshop.dev.shipping.cart_endpoint", value = "cart-dev.devops23.store:8080", type="String"},
-			{name = "roboshop.dev.shipping.db_host", value = "mysql-dev.devops23.store", type="String"}
+			{name = "roboshop.dev.shipping.db_host", value = "mysql-dev.devops23.store", type="String"},
+			{name = "roboshop.dev.payment.cart_host", value = "cart-dev.devops23.store", type="String"},
+			{name = "roboshop.dev.payment.cart_port", value = "8080", type="String"},
+			{name = "roboshop.dev.payment.user_host", value = "user-dev.devops23.store", type="String"},
+			{name = "roboshop.dev.payment.user_port", value = "8080", type="String"},
+			{name = "roboshop.dev.payment.amqp_host", value = "rabbitmq-dev.devops23.store", type="String"},
+			{name = "roboshop.dev.payment.amqp_user", value = "roboshop", type="String"}
 ]
 }
 
