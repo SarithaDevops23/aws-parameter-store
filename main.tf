@@ -8,22 +8,20 @@ resource "aws_ssm_parameter" "params" {
 variable "params"{
 
 	default=[
-			{name = "roboshop.{{ env }}.frontend.catalogue_url", value = "http://catalogue-{{ env }}.devops23.store:8080/", type="String"},
-			{name = "roboshop.{{ env }}.frontend.user_url", value = "http://user-{{ env }}.devops23.store:8080/", type="String"},
-			{name = "roboshop.{{ env }}.frontend.cart_url", value = "http://cart-{{ env }}.devops23.store:8080/", type="String"},
-			{name = "roboshop.{{ env }}.frontend.shipping_url", value = "http://shipping-{{ env }}.devops23.store:8080/", type="String"},
-			{name = "roboshop.{{ env }}.frontend.payment_url", value = "http://payment-{{ env }}.devops23.store:8080/", type="String"},
-			{name = "roboshop.{{ env }}.catalogue.mongo_url", value = "mongodb://mongodb-{{ env }}.devops23.store:27017/catalogue", type="String"},
-			{name = "roboshop.{{ env }}.user.mongo_url", value = "mongodb://mongodb-{{ env }}.devops23.store:27017/users", type="String"},
-			{name = "roboshop.{{ env }}.user.redis_host", value = "redis-{{ env }}.devops23.store", type="String"},
-			{name = "roboshop.{{ env }}.cart.redis_host", value = "redis-{{ env }}.devops23.store", type="String"},
-			{name = "roboshop.{{ env }}.cart.catalogue_host", value = "catalogue-{{ env }}.devops23.store", type="String"},
-			{name = "roboshop.{{ env }}.cart.catalogue_port", value = "8080", type="String"},
-			{name = "roboshop.{{ env }}.shipping.cart_endpoint", value = "cart-{{ env }}.devops23.store:8080", type="String"},
-			{name = "roboshop.{{ env }}.shipping.db_host", value = ""mysql-{{ env }}.devops23.store", type="String"},
+			{name = "roboshop.dev.frontend.catalogue_url", value = "http://catalogue-dev.devops23.store:8080/", type="String"},
+			{name = "roboshop.dev.frontend.user_url", value = "http://user-dev.devops23.store:8080/", type="String"},
+			{name = "roboshop.dev.frontend.cart_url", value = "http://cart-dev.devops23.store:8080/", type="String"},
+			{name = "roboshop.dev.frontend.shipping_url", value = "http://shipping-dev.devops23.store:8080/", type="String"},
+			{name = "roboshop.dev.frontend.payment_url", value = "http://payment-dev.devops23.store:8080/", type="String"},
+			{name = "roboshop.dev.catalogue.mongo_url", value = "mongodb://mongodb-dev.devops23.store:27017/catalogue", type="String"},
+			{name = "roboshop.dev.user.mongo_url", value = "mongodb://mongodb-dev.devops23.store:27017/users", type="String"},
+			{name = "roboshop.dev.user.redis_host", value = "redis-dev.devops23.store", type="String"},
+			{name = "roboshop.dev.cart.redis_host", value = "redis-dev.devops23.store", type="String"},
+			{name = "roboshop.dev.cart.catalogue_host", value = "catalogue-dev.devops23.store", type="String"},
+			{name = "roboshop.dev.cart.catalogue_port", value = "8080", type="String"},
+			{name = "roboshop.dev.shipping.cart_endpoint", value = "cart-dev.devops23.store:8080", type="String"},
+			{name = "roboshop.dev.shipping.db_host", value = ""mysql-dev.devops23.store", type="String"},
 ]
 }
-
-variable "env" {}
 
 
