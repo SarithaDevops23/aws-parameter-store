@@ -26,7 +26,13 @@ variable "params"{
 			{name = "roboshop.dev.payment.user_host", value = "user-dev.devops23.store", type="String"},
 			{name = "roboshop.dev.payment.user_port", value = "8080", type="String"},
 			{name = "roboshop.dev.payment.amqp_host", value = "rabbitmq-dev.devops23.store", type="String"},
-			{name = "roboshop.dev.payment.amqp_user", value = "roboshop", type="String"}
+			{name = "roboshop.dev.payment.amqp_user", value = "roboshop", type="String"},
+			{name = "roboshop.dev.payment.amqp_pass", value = "roboshop123", type="SecureString"},
+			{name = "roboshop.dev.dispatch.amqp_host", value = "rabbitmq-dev.devops23.store", type="String"},
+			{name = "roboshop.dev.dispatch.amqp_user", value = "roboshop", type="String"},
+			{name = "roboshop.dev.dispatch.amqp_pass", value = "roboshop123", type="SecureString"}
+
+			
 ]
 }
 
